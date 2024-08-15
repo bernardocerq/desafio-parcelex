@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import CardForm from '@/components/base/cards/CardForm.vue';
 import BaseBtn from '@/components/base/buttons/BaseBtn.vue';
 import { Form } from 'vee-validate';

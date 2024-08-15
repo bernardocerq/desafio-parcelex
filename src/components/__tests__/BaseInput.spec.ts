@@ -1,5 +1,4 @@
 import { mount } from '@vue/test-utils';
-import { Field } from 'vee-validate';
 import { describe, it, expect } from 'vitest';
 import BaseInput from '@/components/base/inputs/BaseInput.vue';
 
