@@ -33,6 +33,6 @@ describe('Formulário de Cadastro', () => {
     cy.get('.hidden.md\\:block').find('input[type="file"]').selectFile(imageFile);
     cy.get('button[type="submit"]').click();
 
-    cy.get('.Vue-Toastification__container').should('contain.text', 'Usuário cadastrado com sucesso');
+    cy.get('.Vue-Toastification__container').should('contain.text', 'Usuário cadastrado com sucesso!');
   });
 });
