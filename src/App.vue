@@ -4,8 +4,10 @@ import { useRoute } from 'vue-router';
 
 const route = useRoute();
 
+const defaultLayout = 'default-layout'
+
 const layout = computed(() => {
-  return route.meta.layout || 'default-layout';
+  return route.meta.layout || defaultLayout;
 });
 
 </script>
