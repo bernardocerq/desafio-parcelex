@@ -39,6 +39,7 @@ interface IProps {
 }
 
 const props = withDefaults(defineProps<IProps>(), {
+  fullWidth: false,
   color: "primary",
   variant: "contained",
   size: "md",
@@ -55,6 +56,16 @@ const variants = {
     secondary: {
       base: `bg-par-secondary text-white font-bold border border-blue-secondary`,
       loading: `bg-par-secondary text-white font-bold border border-blue-secondary`,
+    },
+  },
+  outline: {
+    primary: {
+      base: `bg-transparent text-par-primary font-bold border border-par-primary`,
+      loading: `bg-transparent text-par-primary font-bold border border-par-primary`,
+    },
+    secondary: {
+      base: `bg-transparent text-par-secondary font-bold border border-par-secondary`,
+      loading: `bg-transparent text-par-secondary font-bold border border-par-secondary`,
     },
   },
 } as any;
