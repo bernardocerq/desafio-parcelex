@@ -32,8 +32,8 @@ module.exports = {
         xs: '0.65rem'
       },
       colors: {
-        'par-primary': '#FFD700',
-        'par-secondary': '#FFA500',
+        'par-primary': '#D3E9FC',
+        'par-secondary': '#0055D4',
         'par-tertiary': '#FF6347',
         'par-quaternary': '#FF4500',
         'par-danger': '#DC143C',
