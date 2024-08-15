@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CardForm button-text="Submit" :loading="loading" @on-submit="handleSubmit">
+    <CardForm button-text="Submit" :loading="userForm.loading.value" @on-submit="handleSubmit">
       <template #default>
         <UserForm />
       </template>
@@ -12,16 +12,10 @@
 import CardForm from "@/components/base/cards/CardForm.vue";
 import UserForm from "@/components/forms/UserForm.vue";
 import { useUserForm } from "@/composables/form/useUserForm";
-import { ref } from "vue";
 
 const userForm = useUserForm();
 
-const loading = ref(false);
-
 const handleSubmit = async () => {
-  loading.value = true;
-  await new Promise((resolve) => setTimeout(resolve, 2000)); // para fins de demonstração
-  userForm.handleSubmit();
-  loading.value = false;
+  userForm.submitForm();
 };
 </script>
