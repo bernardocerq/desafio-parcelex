@@ -22,18 +22,18 @@
           placeholder="Digite seu telefone"
           class="mb-4"
           mask="(##) #####-####"
-          rules="validatePhone"
+          rules="required|validatePhone"
         />
       </div>
       <div class="col-span-6">
         <BaseInput
           v-model.number="idForm.form.value.age"
-          label="Idade"
+          label="Idade *"
           name="age"
           type="number"
           placeholder="Digite sua idade"
           class="mb-4"
-          rules="minValue:18"
+          rules="required|minValue:18"
         />
       </div>
       <div class="col-span-12">

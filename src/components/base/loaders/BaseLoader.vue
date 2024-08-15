@@ -8,15 +8,12 @@ interface IProps {
 
 const props = withDefaults(defineProps<IProps>(), {
   isFixed: false,
-  hasBackground: false,
   size: 10,
   color: "primary",
 });
 
 const wrapper_classes = {
   base: "flex items-center justify-center transform -translate-x-1/2 -translate-y-1/2 ml-12",
-  withBackground: "",
-  fixed: "",
 };
 
 const effects_classes = {
@@ -27,8 +24,8 @@ const effects_classes = {
 };
 
 const color_classes = {
-  primary: "border-l-primary",
-  secondary: "border-l-secondary",
+  primary: "border-l-par-primary",
+  secondary: "border-l-par-secondary",
   white: "border-l-white",
 };
 </script>
@@ -37,8 +34,6 @@ const color_classes = {
   <div
     :class="[
       wrapper_classes.base,
-      hasBackground && wrapper_classes.withBackground,
-      isFixed && wrapper_classes.fixed,
     ]"
   >
     <div

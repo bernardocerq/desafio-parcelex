@@ -8,10 +8,7 @@
     <div class="flex flex-col gap-1 w-full mb-1">
       <label class="font-400 text-dark text-sm"
         >{{ props.label
-        }}<span v-if="props.mandatory" class="ml-1 text-[#52C076]"
-          >*</span
-        ></label
-      >
+        }}</label>
       <div class="relative">
         <div
           v-if="$slots.icon"
@@ -70,7 +67,6 @@ const props = defineProps<{
   mask?: string;
   min?: number;
   valueInput?: string;
-  mandatory?: boolean;
   disabled?: boolean;
   error?: Boolean;
   errorMessage?: string;
