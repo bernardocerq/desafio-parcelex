@@ -1,7 +1,6 @@
 import { mount } from '@vue/test-utils';
 import { describe, it, expect } from 'vitest';
 import ImageInput from '@/components/base/inputs/ImageInput.vue';
-import BaseIconBtn from '@/components/base/buttons/BaseIconBtn.vue';
 
 describe('ImageInput', () => {
     it('renderiza o label corretamente', () => {
