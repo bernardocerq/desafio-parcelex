@@ -56,11 +56,11 @@ describe('IdentificationForm', () => {
 
         const nameInput = wrapper.findComponent(BaseInput);
 
-        await nameInput.vm.$emit('update:modelValue', 'John Doe');
+        await nameInput.vm.$emit('update:modelValue', 'Bernardo Cerqueira');
 
         const { form } = useIdentificationForm();
 
-        expect(form.value.name).toBe('John Doe');
+        expect(form.value.name).toBe('Bernardo Cerqueira');
     });
 
 });

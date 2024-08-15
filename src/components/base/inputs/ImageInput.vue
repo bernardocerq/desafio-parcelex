@@ -4,6 +4,7 @@
     <div class="relative">
       <input
         ref="fileInput"
+        name="avatar"
         type="file"
         @change="onFileChange"
         accept="image/*"

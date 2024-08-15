@@ -8,12 +8,12 @@ describe('CardForm', () => {
   it('renderiza o título corretamente', () => {
     const wrapper = mount(CardForm, {
       props: {
-        title: 'Test Form',
+        title: 'test title',
         size: 'md',
       },
     });
 
-    expect(wrapper.find('h2').text()).toBe('Test Form');
+    expect(wrapper.find('h2').text()).toBe('test title');
   });
 
   it('renderiza o botão com o texto padrão "Enviar"', () => {
@@ -30,13 +30,13 @@ describe('CardForm', () => {
   it('renderiza o botão com o texto personalizado', () => {
     const wrapper = mount(CardForm, {
       props: {
-        buttonText: 'Submit Now',
+        buttonText: 'Enviar',
         size: 'md',
       },
     });
 
     const button = wrapper.findComponent(BaseBtn);
-    expect(button.text()).toBe('Submit Now');
+    expect(button.text()).toBe('Enviar');
   });
 
   it('renderiza o botão com o loading ativado', () => {
@@ -70,12 +70,12 @@ describe('CardForm', () => {
         size: 'md',
       },
       slots: {
-        default: '<div class="slot-content">Form Content</div>',
+        default: '<div class="slot-content">Conteudo</div>',
       },
     });
 
     expect(wrapper.find('.slot-content').exists()).toBe(true);
-    expect(wrapper.find('.slot-content').text()).toBe('Form Content');
+    expect(wrapper.find('.slot-content').text()).toBe('Conteudo');
   });
 
   it('renderiza o formulário com as classes corretas', () => {
