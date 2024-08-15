@@ -11,7 +11,6 @@
 <script setup lang="ts">
 import BaseBtn from '@/components/base/buttons/BaseBtn.vue'
 import { Form } from 'vee-validate'
-import { computed } from 'vue';
 
 interface IProps {
     title?: string;
