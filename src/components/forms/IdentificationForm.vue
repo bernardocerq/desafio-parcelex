@@ -17,7 +17,7 @@
       <div class="col-span-6">
         <BaseInput
           v-model="idForm.form.value.phone"
-          label="Telefone"
+          label="Telefone *"
           name="phone"
           placeholder="Digite seu telefone"
           class="mb-4"

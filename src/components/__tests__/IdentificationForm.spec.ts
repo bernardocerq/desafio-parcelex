@@ -33,7 +33,7 @@ describe('IdentificationForm', () => {
         const baseInputComponents = wrapper.findAllComponents(BaseInput);
 
         expect(baseInputComponents[0].props().label).toBe('Nome *');
-        expect(baseInputComponents[1].props().label).toBe('Telefone');
+        expect(baseInputComponents[1].props().label).toBe('Telefone *');
         expect(baseInputComponents[2].props().label).toBe('Idade *');
         expect(baseInputComponents[3].props().label).toBe('Email *');
     });
